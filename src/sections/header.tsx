@@ -29,7 +29,7 @@ export const Header = () => {
                     </div>
                 </div>
 
-                <div data-aos="fade-right" data-aos-delay="300" data-aos-offset="500" data-aos-duration="1000" className="w-1/2 flex ml-4">
+                <div data-aos="fade-right" data-aos-once={true} data-aos-delay="300" data-aos-offset="500" data-aos-duration="1000" className="w-1/2 hidden ml-4 sm:flex">
                     {menuOptions.map((name, id) => {
                         return (
                             <div key={id} className="relative flex flex-col mx-1 group cursor-pointer">
@@ -43,8 +43,8 @@ export const Header = () => {
                     })}
                 </div>
 
-                <div className="w-1/2 self-center">
-                    <div className='flex justify-end space-x-3 mr-2' data-aos="fade-left" data-aos-delay="300" data-aos-offset="500" data-aos-duration="1000">
+                <div className="w-1/2 self-center sm:block hidden">
+                    <div className='flex justify-end space-x-3 mr-2' data-aos-once={true} data-aos="fade-left" data-aos-delay="300" data-aos-offset="500" data-aos-duration="1000">
                         <ShareIcon width={10} className="text-white" />
                         <p className='font-fa text-base font-extrabold text-gray-300 hover:text-white whitespace-nowrap'>RULES</p>
                     </div>
