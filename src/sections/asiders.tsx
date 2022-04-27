@@ -6,7 +6,6 @@ import RlCar2 from '../assets/asides/rl_car_2.png';
 export const Asiders = () => {
     return (
         <section className="relative w-full">
-
             <div className="relative w-full flex sm:flex-row flex-col">
                 <article className="relative sm:w-1/3 w-full flex flex-col space-y-10 py-10 justify-center align-middle">
                     <div className="w-full px-3">
@@ -41,8 +40,6 @@ export const Asiders = () => {
                     </div>
                 </article>
             </div>
-
-
         </section>
     );
 }

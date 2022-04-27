@@ -18,7 +18,8 @@ module.exports = {
         hovered: '#1779ba',
         header: "#000b28",
         footer: '#000',
-        faq: '#1f2033'
+        faq: '#1f2033',
+        reward: '#f49155'
       }
     },
   },

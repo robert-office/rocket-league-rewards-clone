@@ -27,7 +27,7 @@ export const Landing = () => {
                 </div>
 
                 <div data-aos="fade-up" data-aos-once={true} data-aos-delay="300" className="relative self-center h-1/4 cursor-pointer">
-                    <img src={arrowDown} className="w-auto h-full" alt="setinha pra baixo" />
+                    <img src={arrowDown} className="w-auto h-full " alt="setinha pra baixo" />
                 </div>
             </div>
 
