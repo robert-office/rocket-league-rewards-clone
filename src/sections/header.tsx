@@ -1,3 +1,4 @@
+import ShareIcon from '@mui/icons-material/Share';
 import LogoShield from "../assets/logo/logo_shield.png";
 import TextLogo from "../assets/logo/logo_white.png";
 
@@ -22,20 +23,26 @@ export const Header = () => {
                     </div>
                 </div>
 
-                <div className="flex ml-4">
+                <div className="w-1/2 flex ml-4">
                     {menuOptions.map((name, id) => {
                         return (
                             <div key={id} className="relative flex flex-col mx-1 group cursor-pointer">
                                 <div className="h-full flex justify-center mx-3">
-                                    <p className="font-rl font-medium text-center text-gray-300 self-center group-hover:text-white">{name}</p>
+                                    <p className="font-rl font-medium text-center text-gray-300 self-center group-hover:text-white whitespace-nowrap">{name}</p>
                                 </div>
 
-                                <span className={`absolute bottom-0 hidden group-hover:flex h-[4px] w-full ${ id % 2 == 0 ? 'bg-hovered' : 'bg-primary' } self-end`}></span>
+                                <span className={`absolute -bottom-1 hidden group-hover:flex h-[4px] w-full ${ id % 2 === 0 ? 'bg-hovered' : 'bg-primary' } self-end`}></span>
                             </div>
                         )
                     })}
                 </div>
 
+                <div className="w-1/2 self-center">
+                    <div className='flex justify-end space-x-3 mr-2'>
+                        <ShareIcon width={10} className="text-white" />
+                        <p className='font-fa text-base font-extrabold text-gray-300 hover:text-white whitespace-nowrap'>RULES</p>
+                    </div>
+                </div>
             </section>
         </header>
     )
