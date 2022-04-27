@@ -1,7 +1,9 @@
 import ShareIcon from '@mui/icons-material/Share';
 import LogoShield from "../assets/logo/logo_shield.png";
 import TextLogo from "../assets/logo/logo_white.png";
+import { useEffect } from "react";
 
+const AOS = require('aos');
 const menuOptions = [
     "NEWS",
     'BROADCASTS',
@@ -10,8 +12,12 @@ const menuOptions = [
 ]
 
 export const Header = () => {
+    useEffect(() => {
+        AOS.init();
+    }, []);
+
     return (
-        <header className="relative bg-header w-full h-14">
+        <header className="sticky top-0 bg-header w-full h-14 z-50">
             <section className="relative w-full flex flex-row p-1">
 
                 <div className="flex space-x-4 justify-center align-middle">
@@ -23,7 +29,7 @@ export const Header = () => {
                     </div>
                 </div>
 
-                <div className="w-1/2 flex ml-4">
+                <div data-aos="fade-right" data-aos-delay="300" data-aos-offset="500" data-aos-duration="1000" className="w-1/2 flex ml-4">
                     {menuOptions.map((name, id) => {
                         return (
                             <div key={id} className="relative flex flex-col mx-1 group cursor-pointer">
@@ -38,7 +44,7 @@ export const Header = () => {
                 </div>
 
                 <div className="w-1/2 self-center">
-                    <div className='flex justify-end space-x-3 mr-2'>
+                    <div className='flex justify-end space-x-3 mr-2' data-aos="fade-left" data-aos-delay="300" data-aos-offset="500" data-aos-duration="1000">
                         <ShareIcon width={10} className="text-white" />
                         <p className='font-fa text-base font-extrabold text-gray-300 hover:text-white whitespace-nowrap'>RULES</p>
                     </div>
