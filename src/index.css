@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "rl";
+    src: url("../public/fonts/rl.woff2");
+}
+@font-face {
+    font-family: "fa";
+    src: url("../public/fonts/fa-solid-900.woff2");
+}
+
 ::-webkit-scrollbar-track {
     background-color: rgba(39, 39, 42, 1);
 }
@@ -19,7 +28,6 @@ html {
 }
 
 body, html {
-    background-color: #171923;
     min-height: 100% !important;
     height: 100%;
     position: relative;

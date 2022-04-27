@@ -6,6 +6,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        rl: ["rl", "sans-serif"],
+        fa: ["fa", "sans-serif"],
+      },
+
       colors: {
         ...colors,
         primary: '#f88510',
