@@ -43,6 +43,7 @@ export const Carrousel = () => {
                     })}
                 </ul>
             </div>
+            <div className="w-full h-1 bg-primary"></div>
         </section>
     );
 }
